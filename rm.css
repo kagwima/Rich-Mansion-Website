@@ -1624,6 +1624,7 @@
             overflow-x: hidden;
             font-family: 'Ubuntu', sans-serif !important;
             font-size: 12px !important;
+            width:270%;
         }
         .nav-bar {
             position: fixed;
