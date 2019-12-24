@@ -900,15 +900,14 @@ img {
 /*media quey for px- 320*/
 
 @media only screen and (min-width:320px) and (max-width:360px) {
-    #rm-Site {
-        overflow-x: none !important;
-        font-family: 'Ubuntu' !important;
-    }
     body {
-        margin: none !important;
-        padding: none !important;
-        background: black;
+        margin: 0px !important;
+        padding: 0px !important;
+        background: rgb(0, 0, 0);
+        overflow-x: hidden;
+        font-family: 'Ubuntu', sans-serif !important;
         font-size: 12px !important;
+        width: 100%;
     }
     .nav-bar {
         position: fixed;
@@ -1026,12 +1025,13 @@ img {
         cursor: pointer;
     }
     .slides-container-1 {
-        width: 100%;
+        max-width: 100%;
         max-height: 100%;
         margin-bottom: 10px;
         position: relative;
         top: 98px;
         z-index: -3;
+        left: 0px;
     }
     .hero-slide {
         display: none;
@@ -1085,7 +1085,7 @@ img {
         background: white;
         position: relative;
         display: block;
-        top: 60px;
+        top: 1282px;
     }
     .about-us img {
         width: 100%;
@@ -1172,7 +1172,7 @@ img {
         height: 780px;
         width: 100%;
         background: rgb(255, 255, 255);
-        top: 65px;
+        bottom: 230px;
     }
     #our-services-content {
         position: relative;
@@ -1182,7 +1182,7 @@ img {
         position: absolute;
         display: inline-block;
         top: 50px;
-        left: 35vw;
+        left: 34vw;
     }
     .services-icon-1 {
         height: 80px;
@@ -1218,7 +1218,7 @@ img {
     }
     .our-services-header-1 {
         position: absolute;
-        left: 29vw;
+        left: 27vw;
         top: 15px;
         display: inline-block;
         font-size: 20px;
@@ -1236,7 +1236,7 @@ img {
         position: relative;
         top: 10px;
         font-weight: 600;
-        left: 22vw;
+        left: 20vw;
     }
     .our-services-text-3 {
         font-size: 15px;
@@ -1245,13 +1245,13 @@ img {
         height: 10px;
         position: absolute;
         left: 10px;
-        top: 340px;
+        top: 330px;
     }
     .our-services-text-4 {
         position: relative;
         top: 10px;
         font-weight: 600;
-        left: 8vw;
+        left: 5vw;
     }
     .our-services-text-5 {
         font-size: 15px;
@@ -1260,20 +1260,20 @@ img {
         height: 10px;
         position: absolute;
         left: 10px;
-        top: 630px;
+        top: 620px;
     }
     .our-services-text-6 {
         position: relative;
         top: 10px;
         font-weight: 600;
         font-size: 15px;
-        left: 20vw;
+        left: 15vw;
     }
     .how-it-works {
         position: relative;
         height: 430px;
-        background: rgb(255, 255, 255);
-        top: 70px;
+        background: white;
+        bottom: 224px;
     }
     .how-it-works img {
         position: relative;
@@ -1286,7 +1286,7 @@ img {
     }
     .how-it-works-content {
         position: relative;
-        top: 20px;
+        top: 600px;
     }
     .how-it-works .work-2 {
         position: absolute;
@@ -1299,30 +1299,29 @@ img {
     }
     .how-it-works-txt-1 {
         position: absolute;
-        left: 16px;
-        top: 20px;
+        bottom: 550px;
+        left: 98px;
         font-size: 18px;
         font-weight: 700;
     }
     .how-it-works-txt-2 {
         position: absolute;
-        top: 160px;
+        left: 103px;
+        bottom: 515px;
         font-size: 20px;
-        font-weight: 400;
+        font-weight: 500;
         font-family: sans-serif;
-        left: 10px;
-        display: none;
     }
     .how-it-works-txt-3 {
         position: absolute;
-        left: 66px;
-        top: 50px;
+        left: 40px;
+        bottom: 470px;
+        transform: translate(10%, 1%);
         font-size: 12px;
         font-weight: 300;
         font-family: sans-serif;
-        text-align: center;
+        text-align: left;
         line-break: normal;
-        display: block;
     }
     .how-it-works-span-3 {
         position: absolute;
@@ -1336,8 +1335,8 @@ img {
     }
     .how-it-works-txt-4 {
         position: absolute;
-        left: 36px;
-        top: 120px;
+        left: 10px;
+        bottom: 410px;
         transform: translate(10%, 0%);
         font-size: 12px;
         font-weight: 300;
@@ -1355,8 +1354,8 @@ img {
     }
     .how-it-works-txt-5 {
         position: absolute;
-        left: 67px;
-        top: 200px;
+        left: 38px;
+        bottom: 330px;
         transform: translate(10%, 0%);
         font-size: 12px;
         font-weight: 300;
@@ -1378,8 +1377,8 @@ img {
     }
     .how-it-works-txt-6 {
         position: absolute;
-        left: 25px;
-        top: 300px;
+        left: 10px;
+        bottom: 267px;
         transform: translate(10%, 0%);
         font-size: 12px;
         font-weight: 300;
@@ -1397,7 +1396,7 @@ img {
     }
     .how-it-works-txt-7 {
         position: absolute;
-        left: 30px;
+        left: 14px;
         bottom: 207px;
         transform: translate(-1%, 0%);
         font-size: 12px;
@@ -1412,9 +1411,9 @@ img {
     }
     .our-patners {
         position: relative;
-        height: 90px;
-        background: rgb(255, 255, 255);
-        display: block;
+        height: 800px;
+        background: white;
+        top: 80px;
     }
     .group-fist-cont {
         position: relative;
@@ -1461,8 +1460,8 @@ img {
         width: 250px !important;
         height: 150px;
         top: 5px;
-        right: 48px;
-        left: 50px;
+        right: 55px;
+        left: 27px;
     }
     .owl-carousel .item {
         height: auto;
@@ -1478,23 +1477,21 @@ img {
     }
     .contact-us-page {
         position: relative;
-        height: 797px;
+        height: 900px;
         background: white;
-        top: 750px;
-        display: block;
+        top: 89px;
     }
     .contact-us-page>p {
         display: inline;
         position: relative;
-        top: 50px;
-        left: 140px;
+        top: 40px;
+        left: 114px;
         font-size: 20px;
         font-weight: 900;
     }
     .form-container {
         position: absolute;
-        top: 90px;
-        left: 10px;
+        top: 110px;
         display: block;
         height: 300px;
         width: auto;
@@ -1504,14 +1501,12 @@ img {
         display: block;
         width: auto;
         height: auto;
-        top: 470px;
+        top: 540px;
         left: 3px;
     }
     .contact-location iframe {
         height: 300px;
-        width: 360px;
-        display: block;
-        margin-right: 10px;
+        width: 350px;
     }
     .form-container p {
         display: inline;
@@ -1522,7 +1517,7 @@ img {
     }
     .input-field-0>input {
         position: relative;
-        left: 40px;
+        left: 22px;
         top: 0px;
         display: inline-block;
         width: 260px;
@@ -1539,7 +1534,7 @@ img {
     .input-field-1>input {
         position: relative;
         top: 15px;
-        left: 40px;
+        left: 22px;
         display: inline-block;
         width: 260px;
         height: 45px;
@@ -1557,9 +1552,9 @@ img {
         resize: none;
         position: relative;
         top: 40px;
-        left: 40px;
+        left: 22px;
         display: inline-block;
-        width: 260px;
+        width: 250px;
         height: 95px;
         background: #707070c5;
         background-position: -1000px;
@@ -1610,7 +1605,7 @@ img {
     .input-field-4>input {
         position: relative;
         top: 70px;
-        left: 40px;
+        left: 22px;
         display: inline-block;
         width: 249px;
         height: 40px;
@@ -1633,10 +1628,10 @@ img {
     .footer {
         background: #000000;
         width: 100%;
-        height: 400px;
+        height: 250px;
         display: block;
         position: relative;
-        top: 755px;
+        top: 120px;
         color: white;
     }
     .footer-bullet {
@@ -1645,17 +1640,15 @@ img {
         height: 10px;
         position: absolute;
         top: 3px;
-        left: 0px;
-        display: none;
+        right: 335px;
     }
     .footer-bullet-2 {
         background: #fbff00;
         width: 10px;
         height: 10px;
-        position: relative;
-        top: 5px;
-        left: 0px;
-        display: none;
+        position: absolute;
+        top: 127px;
+        right: 335px;
     }
     .footer-bullet-3 {
         background: #fbff00;
@@ -1663,16 +1656,10 @@ img {
         height: 10px;
         position: absolute;
         top: 271px;
-        right: 320px;
+        right: 345px;
     }
     .rotated {
         transform: rotate(47deg);
-    }
-    .footer-2 {
-        display: block;
-        position: absolute;
-        left: 0px;
-        top: 130px;
     }
     .footer-input>input {
         border: none;
@@ -1692,13 +1679,19 @@ img {
         height: 30px;
         margin-top: 10px;
     }
+    .footer-container {
+        display: grid;
+        grid-template-rows: repeat(3, 119px);
+        grid-gap: 5px;
+    }
     .footer-text-heading {
         margin-bottom: 7px;
     }
     .main-footer-container {
         position: absolute;
-        top: 30px;
+        top: 15px;
         left: 35px;
+        height: 100px;
     }
     .main-office {
         position: relative;
@@ -1731,31 +1724,19 @@ img {
         margin-top: 5px;
     }
     .social-footer {
-        display: block;
         position: relative;
-        right: 53px;
-        bottom: 30px;
+        right: 23px;
+        bottom: 75px;
+        display: block;
+        float: left;
+        margin-left: 5px;
+        width: auto;
     }
-    .social-footer .tweet-2 {
+    .social-footer>a>img {
         display: inline-block;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        right: 450px;
-    }
-    .social-footer .fb-2 {
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        right: 400px;
-    }
-    .social-footer a.ig-2 {
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        right: 350px;
+        width: 50px;
+        height: 25px;
+        padding-top: 0px;
     }
 }
 
@@ -2375,7 +2356,6 @@ img {
     .form-container {
         position: absolute;
         top: 90px;
-        left: 10px;
         display: block;
         height: 300px;
         width: auto;
@@ -2440,7 +2420,7 @@ img {
         top: 40px;
         left: 40px;
         display: inline-block;
-        width: 260px;
+        width: 250px;
         height: 95px;
         background: #707070c5;
         background-position: -1000px;
@@ -2638,6 +2618,7 @@ img {
         position: absolute;
         right: 350px;
     }
+    .social-footer>img {}
 }
 
 
@@ -3262,7 +3243,6 @@ img {
     .form-container {
         position: absolute;
         top: 90px;
-        left: 10px;
         display: block;
         height: 300px;
         width: auto;
@@ -3327,7 +3307,7 @@ img {
         top: 40px;
         left: 40px;
         display: inline-block;
-        width: 260px;
+        width: 250px;
         height: 95px;
         background: #707070c5;
         background-position: -1000px;
@@ -3518,13 +3498,14 @@ img {
         position: absolute;
         right: 400px;
     }
-    .social-footer a.ig-2 {
+    .social-footer .ig-2 {
         display: inline-block;
         width: 30px;
         height: 30px;
         position: absolute;
         right: 350px;
     }
+    .social-footer>img {}
 }
 
 
@@ -3557,12 +3538,13 @@ img {
 @media only screen and (min-width:412px) and (max-width:568px) {
     #rm-Site {
         overflow-x: none !important;
-        font-family: 'Ubuntu' !important;
     }
     body {
-        margin: none !important;
-        padding: none !important;
-        background: black;
+        margin: 0px !important;
+        padding: 0px !important;
+        background: rgb(0, 0, 0);
+        overflow-x: hidden;
+        font-family: 'Ubuntu', sans-serif !important;
         font-size: 12px !important;
     }
     .nav-bar {
@@ -3681,12 +3663,13 @@ img {
         cursor: pointer;
     }
     .slides-container-1 {
-        width: 100%;
+        max-width: 100%;
         max-height: 100%;
         margin-bottom: 10px;
         position: relative;
         top: 98px;
         z-index: -3;
+        left: 0px;
     }
     .hero-slide {
         display: none;
@@ -3712,7 +3695,7 @@ img {
     .active {
         background-color: #0cf5f5;
     }
-    /* Fading animation */
+    /* Fading animation*/
     .fade {
         -webkit-animation-name: fade;
         -webkit-animation-duration: 1.5s;
@@ -3736,11 +3719,11 @@ img {
         }
     }
     .about-us {
-        height: 290px;
+        height: 270px;
         background: white;
         position: relative;
         display: block;
-        top: 60px;
+        top: 1405px;
     }
     .about-us img {
         width: 100%;
@@ -3824,20 +3807,20 @@ img {
     .our-services-vision {
         position: relative;
         display: block;
-        height: 780px;
+        height: 820px;
         width: 100%;
         background: rgb(255, 255, 255);
-        top: 65px;
+        bottom: 205px;
     }
     #our-services-content {
         position: relative;
-        top: 10px;
+        top: 35px;
     }
     .our-services-icons {
         position: absolute;
         display: inline-block;
         top: 50px;
-        left: 35vw;
+        left: 160px;
     }
     .services-icon-1 {
         height: 80px;
@@ -3845,7 +3828,7 @@ img {
         padding-bottom: 120px;
     }
     .services-icon-2 {
-        padding-bottom: 195px;
+        padding-bottom: 185px;
         height: 90px;
         width: 90px;
     }
@@ -3873,7 +3856,7 @@ img {
     }
     .our-services-header-1 {
         position: absolute;
-        left: 29vw;
+        left: 33vw;
         top: 15px;
         display: inline-block;
         font-size: 20px;
@@ -3891,7 +3874,6 @@ img {
         position: relative;
         top: 10px;
         font-weight: 600;
-        left: 22vw;
     }
     .our-services-text-3 {
         font-size: 15px;
@@ -3900,13 +3882,12 @@ img {
         height: 10px;
         position: absolute;
         left: 10px;
-        top: 340px;
+        top: 330px;
     }
     .our-services-text-4 {
         position: relative;
         top: 10px;
         font-weight: 600;
-        left: 8vw;
     }
     .our-services-text-5 {
         font-size: 15px;
@@ -3915,20 +3896,21 @@ img {
         height: 10px;
         position: absolute;
         left: 10px;
-        top: 630px;
+        top: 620px;
     }
     .our-services-text-6 {
         position: relative;
         top: 10px;
         font-weight: 600;
+    }
+    .our-services-text-6 {
         font-size: 15px;
-        left: 20vw;
     }
     .how-it-works {
         position: relative;
-        height: 430px;
-        background: rgb(255, 255, 255);
-        top: 70px;
+        height: 500px;
+        background: white;
+        bottom: 195px;
     }
     .how-it-works img {
         position: relative;
@@ -3941,7 +3923,7 @@ img {
     }
     .how-it-works-content {
         position: relative;
-        top: 20px;
+        top: 620px;
     }
     .how-it-works .work-2 {
         position: absolute;
@@ -3954,30 +3936,29 @@ img {
     }
     .how-it-works-txt-1 {
         position: absolute;
-        left: 16px;
-        top: 20px;
+        bottom: 550px;
+        left: 150px;
         font-size: 18px;
         font-weight: 700;
     }
     .how-it-works-txt-2 {
         position: absolute;
-        top: 160px;
+        left: 156.5px;
+        bottom: 515px;
         font-size: 20px;
-        font-weight: 400;
+        font-weight: 500;
         font-family: sans-serif;
-        left: 10px;
-        display: none;
     }
     .how-it-works-txt-3 {
         position: absolute;
-        left: 66px;
-        top: 50px;
+        left: 94px;
+        bottom: 470px;
+        transform: translate(10%, 1%);
         font-size: 12px;
         font-weight: 300;
         font-family: sans-serif;
-        text-align: center;
+        text-align: left;
         line-break: normal;
-        display: block;
     }
     .how-it-works-span-3 {
         position: absolute;
@@ -3991,8 +3972,8 @@ img {
     }
     .how-it-works-txt-4 {
         position: absolute;
-        left: 36px;
-        top: 120px;
+        left: 65px;
+        bottom: 410px;
         transform: translate(10%, 0%);
         font-size: 12px;
         font-weight: 300;
@@ -4010,8 +3991,8 @@ img {
     }
     .how-it-works-txt-5 {
         position: absolute;
-        left: 67px;
-        top: 200px;
+        left: 94px;
+        bottom: 330px;
         transform: translate(10%, 0%);
         font-size: 12px;
         font-weight: 300;
@@ -4033,8 +4014,8 @@ img {
     }
     .how-it-works-txt-6 {
         position: absolute;
-        left: 25px;
-        top: 300px;
+        left: 55px;
+        bottom: 267px;
         transform: translate(10%, 0%);
         font-size: 12px;
         font-weight: 300;
@@ -4052,8 +4033,8 @@ img {
     }
     .how-it-works-txt-7 {
         position: absolute;
-        left: 30px;
-        bottom: 207px;
+        left: 60px;
+        bottom: 200px;
         transform: translate(-1%, 0%);
         font-size: 12px;
         font-weight: 300;
@@ -4061,15 +4042,15 @@ img {
     }
     .how-it-works-span-7 {
         position: absolute;
-        left: 5px;
+        left: 7px;
         transform: translate(1%);
         display: inline-block;
     }
     .our-patners {
         position: relative;
-        height: 90px;
-        background: rgb(255, 255, 255);
-        display: block;
+        height: 800px;
+        background: white;
+        top: 95px;
     }
     .group-fist-cont {
         position: relative;
@@ -4080,22 +4061,22 @@ img {
     }
     .group-fist-cont img {
         position: absolute;
-        bottom: 200px;
-        width: 370px;
-        height: 210px;
+        bottom: 175px;
+        width: 395px;
+        height: 250px;
         right: 0px;
     }
     .our-patners-text-1 {
         position: absolute;
         font-size: 20px;
         font-weight: 600;
-        top: 35px;
-        left: 30vw;
+        top: 20px;
+        left: 33vw;
     }
     .our-patners-text-2 {
         position: absolute;
         font-size: 15px;
-        top: 140px;
+        top: 155px;
         left: 10px;
     }
     .owl-carousel {
@@ -4104,7 +4085,7 @@ img {
         top: 190px;
         border: none;
         padding: 10px 20px;
-        right: 22px;
+        right: 18px;
         background: #ffffff;
         width: auto;
     }
@@ -4113,10 +4094,10 @@ img {
     }
     .patner-logo {
         position: absolute;
-        width: 250px !important;
-        height: 150px;
+        width: 290px !important;
+        height: 170px;
         top: 5px;
-        right: 48px;
+        right: 2px;
         left: 50px;
     }
     .owl-carousel .item {
@@ -4133,23 +4114,21 @@ img {
     }
     .contact-us-page {
         position: relative;
-        height: 797px;
+        height: 900px;
         background: white;
-        top: 750px;
-        display: block;
+        top: 105px;
     }
     .contact-us-page>p {
         display: inline;
         position: relative;
-        top: 50px;
-        left: 140px;
+        top: 40px;
+        left: 150px;
         font-size: 20px;
         font-weight: 900;
     }
     .form-container {
         position: absolute;
-        top: 90px;
-        left: 10px;
+        top: 110px;
         display: block;
         height: 300px;
         width: auto;
@@ -4159,14 +4138,12 @@ img {
         display: block;
         width: auto;
         height: auto;
-        top: 470px;
-        left: 3px;
+        top: 504px;
+        left: 0px;
     }
     .contact-location iframe {
-        height: 300px;
-        width: 360px;
-        display: block;
-        margin-right: 10px;
+        height: 370px;
+        width: 400px;
     }
     .form-container p {
         display: inline;
@@ -4177,7 +4154,7 @@ img {
     }
     .input-field-0>input {
         position: relative;
-        left: 40px;
+        left: 60px;
         top: 0px;
         display: inline-block;
         width: 260px;
@@ -4194,7 +4171,7 @@ img {
     .input-field-1>input {
         position: relative;
         top: 15px;
-        left: 40px;
+        left: 60px;
         display: inline-block;
         width: 260px;
         height: 45px;
@@ -4212,9 +4189,9 @@ img {
         resize: none;
         position: relative;
         top: 40px;
-        left: 40px;
+        left: 60px;
         display: inline-block;
-        width: 260px;
+        width: 250px;
         height: 95px;
         background: #707070c5;
         background-position: -1000px;
@@ -4233,7 +4210,7 @@ img {
     .input-field-5>input {
         position: relative;
         top: 30px;
-        left: 22px;
+        left: 46px;
         display: inline-block;
         width: 260px;
         height: 40px;
@@ -4249,7 +4226,7 @@ img {
     .input-field-3>input {
         position: relative;
         bottom: 35px;
-        left: 45px;
+        left: 46px;
         display: none;
         width: 260px;
         height: 40px;
@@ -4265,7 +4242,7 @@ img {
     .input-field-4>input {
         position: relative;
         top: 70px;
-        left: 40px;
+        left: 62px;
         display: inline-block;
         width: 249px;
         height: 40px;
@@ -4288,10 +4265,10 @@ img {
     .footer {
         background: #000000;
         width: 100%;
-        height: 400px;
+        height: 250px;
         display: block;
         position: relative;
-        top: 755px;
+        top: 120px;
         color: white;
     }
     .footer-bullet {
@@ -4300,17 +4277,15 @@ img {
         height: 10px;
         position: absolute;
         top: 3px;
-        left: 0px;
-        display: none;
+        right: 335px;
     }
     .footer-bullet-2 {
         background: #fbff00;
         width: 10px;
         height: 10px;
-        position: relative;
-        top: 5px;
-        left: 0px;
-        display: none;
+        position: absolute;
+        top: 127px;
+        right: 335px;
     }
     .footer-bullet-3 {
         background: #fbff00;
@@ -4318,16 +4293,10 @@ img {
         height: 10px;
         position: absolute;
         top: 271px;
-        right: 320px;
+        right: 345px;
     }
     .rotated {
         transform: rotate(47deg);
-    }
-    .footer-2 {
-        display: block;
-        position: absolute;
-        left: 0px;
-        top: 130px;
     }
     .footer-input>input {
         border: none;
@@ -4347,13 +4316,19 @@ img {
         height: 30px;
         margin-top: 10px;
     }
+    .footer-container {
+        display: grid;
+        grid-template-rows: repeat(3, 119px);
+        grid-gap: 5px;
+    }
     .footer-text-heading {
         margin-bottom: 7px;
     }
     .main-footer-container {
         position: absolute;
-        top: 30px;
+        top: 15px;
         left: 35px;
+        height: 100px;
     }
     .main-office {
         position: relative;
@@ -4386,31 +4361,19 @@ img {
         margin-top: 5px;
     }
     .social-footer {
-        display: block;
         position: relative;
-        right: 53px;
-        bottom: 30px;
+        right: 188px;
+        bottom: 34px;
+        display: block;
+        float: left;
+        margin-left: 5px;
+        width: auto;
     }
-    .social-footer .tweet-2 {
+    .social-footer>a>img {
         display: inline-block;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        right: 450px;
-    }
-    .social-footer .fb-2 {
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        right: 400px;
-    }
-    .social-footer a.ig-2 {
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        right: 350px;
+        width: 50px;
+        height: 25px;
+        padding-top: 0px;
     }
 }
 
